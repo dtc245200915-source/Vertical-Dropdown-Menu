@@ -1,0 +1,53 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    list-style: none;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: #555;
+}
+
+/* Menu con được ẩn mặc định */
+#menu ul li ul {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    visibility: hidden;
+}
+
+/* Hiển thị menu con khi di chuột vào mục cha */
+#menu ul li:hover > ul {
+    visibility: visible;
+}
